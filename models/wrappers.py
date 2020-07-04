@@ -103,6 +103,7 @@ class StyleGAN2(BaseModel):
         # Image widths
         configs = {
             # Converted NVIDIA official
+            'pixel-weapons': 32,
             'ffhq': 1024,
             'car': 512,
             'cat': 256,
@@ -135,6 +136,7 @@ class StyleGAN2(BaseModel):
     # URLs created with https://sites.google.com/site/gdocs2direct/
     def download_checkpoint(self, outfile):
         checkpoints = {
+            'pixel-weapons': 'https://drive.google.com/uc?export=download&id=1ZdqwMp4GIjv8gmho_egNymgw-fboJYe0',
             'horse': 'https://drive.google.com/uc?export=download&id=18SkqWAkgt0fIwDEf2pqeaenNi4OoCo-0',
             'ffhq': 'https://drive.google.com/uc?export=download&id=1FJRwzAkV-XWbxgTwxEmEACvuqF5DsBiV',
             'church': 'https://drive.google.com/uc?export=download&id=1HFM694112b_im01JT7wop0faftw9ty5g',
