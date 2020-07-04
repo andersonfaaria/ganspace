@@ -16,9 +16,6 @@ import random
 from pathlib import Path
 from types import SimpleNamespace
 from utils import download_ckpt
-from netdissect import proggan, zdataset
-from . import biggan
-from . import stylegan
 from . import stylegan2
 from abc import abstractmethod, ABC as AbstractBaseClass
 
