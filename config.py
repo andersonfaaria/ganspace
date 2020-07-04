@@ -53,8 +53,8 @@ class Config:
     
     def from_args(self, args=sys.argv[1:]):
         parser = argparse.ArgumentParser(description='GAN component analysis config')
-        parser.add_argument('--model', dest='model', type=str, default='StyleGAN', help='The network to analyze') # StyleGAN, DCGAN, ProGAN, BigGAN-XYZ
-        parser.add_argument('--layer', dest='layer', type=str, default='g_mapping', help='The layer to analyze')
+        parser.add_argument('--model', dest='model', type=str, default='StyleGAN2', help='The network to analyze') # StyleGAN, DCGAN, ProGAN, BigGAN-XYZ
+        parser.add_argument('--layer', dest='layer', type=str, default='style', help='The layer to analyze')
         parser.add_argument('--class', dest='output_class', type=str, default=None, help='Output class to generate (BigGAN: Imagenet, ProGAN: LSUN)')
         parser.add_argument('--est', dest='estimator', type=str, default='ipca', help='The algorithm to use [pca, fbpca, cupca, spca, ica]')
         parser.add_argument('--sparsity', type=float, default=1.0, help='Sparsity parameter of SPCA')
